@@ -7,7 +7,5 @@ Rails.application.routes.draw do
   resources :posts, only: [:index, :show] do
   end
 
-  get '/admin/env_settings', to: 'env_settings#index'
-
   mount Sidekiq::Web => '/admin/sidekiq'
 end

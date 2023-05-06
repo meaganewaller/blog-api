@@ -15,7 +15,6 @@ gem 'bleib', '0.0.8' # For deployment
 gem "bootsnap", require: false
 
 gem 'carrierwave'
-gem 'config'
 gem 'database_cleaner'
 gem 'mimemagic', '~> 0.3.6'
 gem 'mini_magick'
