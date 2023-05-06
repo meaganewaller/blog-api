@@ -365,8 +365,11 @@ GEM
     seed-fu (2.3.9)
       activerecord (>= 3.1)
       activesupport (>= 3.1)
-    sentry-raven (3.1.2)
-      faraday (>= 1.0)
+    sentry-rails (5.9.0)
+      railties (>= 5.0)
+      sentry-ruby (~> 5.9.0)
+    sentry-ruby (5.9.0)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
     sidekiq (7.1.0)
       concurrent-ruby (< 2)
       connection_pool (>= 2.3.0)
@@ -457,7 +460,8 @@ DEPENDENCIES
   rest-client
   rspec-rails
   seed-fu
-  sentry-raven
+  sentry-rails
+  sentry-ruby
   sidekiq
   sidekiq-cron
   simplecov
