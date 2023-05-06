@@ -1,0 +1,4 @@
+post_fetcher_job:
+  cron: "0 0 * * *"
+  class: "PostFetcherJob"
+  queue: default
